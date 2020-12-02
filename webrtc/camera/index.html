@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/index.css" type="text/css">
+<script>
+  document.write("navigator.userAgent : ", navigator.userAgent);
+  document.write("<br/>navigator.maxTouchPoints : ", navigator.maxTouchPoints);
+
+  var isiOSSafari = (navigator.userAgent.match(/like Mac OS X/i)) ? true: false;
+  console.log("isiOSSafari = ", isiOSSafari);
+  document.write("<br/>isiOSSafari : ", isiOSSafari);
+</script>
+</head>
+<body>
+  <div>
+    <video class="current-video" id="current-video" autoplay></video>
+    <video id="recorded" autoplay></video>
+    <div>
+      <button id="record" disabled>Start Recording</button>
+      <button id="play" disabled>Play</button>
+      <button id="download" disabled>Download</button>
+    </div>
+  </div>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
